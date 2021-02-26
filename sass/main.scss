@@ -1,0 +1,37 @@
+.sota{
+    width: 40px;
+    height: 40px;
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+    border: 1px black solid;
+}
+
+
+.colored{
+    background-color: red;
+
+    
+    
+    
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.white{
+    background-color: white;
+}
