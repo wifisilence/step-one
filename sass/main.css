@@ -1,6 +1,8 @@
-.sota {
+@charset "UTF-8";
+.ріхel {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .conteiner {
@@ -9,8 +11,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 360px;
+  width: 336px;
   height: auto;
+  padding: 0;
+  border: 3px solid black;
 }
 
 li {
@@ -24,17 +28,102 @@ li {
 
 .blue {
   background-color: blue;
+  border: 1px blue solid;
 }
 
 .red {
   background-color: red;
+  border: 1px red solid;
 }
 
 .green {
   background-color: green;
+  border: 1px green solid;
 }
 
 .white {
   background-color: white;
+  border: 1px white solid;
+}
+
+.control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 336px;
+  height: auto;
+  padding: 0;
+  background-color: chartreuse;
+}
+
+.wrapper {
+  background-color: khaki;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.redl {
+  color: red;
+}
+
+.greenl {
+  color: green;
+}
+
+.whitel {
+  color: white;
+}
+
+.bluel {
+  color: blue;
+}
+
+label:before {
+  content: "";
+  border-radius: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #aaa;
+  -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #f3f3f3;
+  font-size: 30px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.radio label:before {
+  border-radius: 8px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.colorChoisHedding {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */
