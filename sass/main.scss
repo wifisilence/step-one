@@ -116,8 +116,10 @@ input[type=radio]:checked+label:before {
 
 input[type=radio] {
     display: none;
+    font-weight: 700;
 }
 
 .colorChoisHedding{
     margin-bottom: 5px;
+    
 }
